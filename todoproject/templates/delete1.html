@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+
+  p {
+  background-color:deeppink;
+  }
+  button{
+  background-color:	#6A5ACD;
+  }
+
+</style>
+<form method="POST">
+  {% csrf_token %}
+  <div class="col-md-3">
+<p><b>Are you sure this task is Done?</b></p>
+  <button type="submit" >confirm </button>
+    </div>
+</form>
+
+{% endblock %}
